@@ -11,3 +11,6 @@ include device/xiaomi/sm6225-common/BoardConfigCommon.mk
 include vendor/xiaomi/creek/BoardConfigVendor.mk
 
 DEVICE_PATH := device/xiaomi/creek
+
+# Inherit Proprietary Vendor
+$(call inherit-product, vendor/xiaomi/creek/creek-vendor.mk)
